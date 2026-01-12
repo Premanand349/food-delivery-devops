@@ -13,8 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: List Kubernetes manifests
+      - name: Validate Kubernetes manifests
         run: |
-          echo "Kubernetes YAML files:"
+          echo "Listing Kubernetes YAML files"
           ls k8s
+
 
